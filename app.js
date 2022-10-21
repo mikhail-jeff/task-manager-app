@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const routes = require('./routes/tasks');
 
+require('./database/connect');
+
 const PORT = 3001;
 
 // * middleware
